@@ -11,4 +11,10 @@ object DModule: TDModule
     Left = 160
     Top = 120
   end
+  object ImageList: TImageList
+    Source = <>
+    Destination = <>
+    Left = 160
+    Top = 240
+  end
 end
