@@ -9,6 +9,7 @@ uses
 
 type
   TActiveWorksForm = class(TForm)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -26,6 +27,11 @@ implementation
 procedure TActiveWorksForm.Activate;
 begin
   self.ShowModal;
+end;
+
+procedure TActiveWorksForm.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := TCloseAction.caFree;
 end;
 
 end.

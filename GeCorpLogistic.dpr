@@ -13,6 +13,5 @@ begin
   Application.Initialize;
   Application.CreateForm(TmainForm, mainForm);
   Application.CreateForm(TDModule, DModule);
-  Application.CreateForm(TActiveWorksForm, ActiveWorksForm);
   Application.Run;
 end.

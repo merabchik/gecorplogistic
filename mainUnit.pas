@@ -7,7 +7,7 @@ uses
   System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.MultiView, FMX.StdCtrls, System.Actions,
-  FMX.ActnList;
+  FMX.ActnList, FMX.Objects;
 
 type
   TmainForm = class(TForm)
@@ -23,6 +23,9 @@ type
     activeWorksAction: TAction;
     ActionTrackProviders: TAction;
     ActionLoaderClients: TAction;
+    StatusBar1: TStatusBar;
+    RectangleHeader: TRectangle;
+    ButtonMultiView: TButton;
     procedure ActionTrackProvidersExecute(Sender: TObject);
     procedure activeWorksActionExecute(Sender: TObject);
     procedure ActionLoaderClientsExecute(Sender: TObject);

@@ -2,23 +2,52 @@ object mainForm: TmainForm
   Left = 0
   Top = 0
   Caption = 'GeCorp '#169' Logistic '
-  ClientHeight = 755
-  ClientWidth = 1062
+  ClientHeight = 524
+  ClientWidth = 746
   Position = DesktopCenter
+  StyleBook = DModule.StyleBook
+  WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object MultiView1: TMultiView
-    NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
-    Size.Width = 250.000000000000000000
+  object StatusBar1: TStatusBar
+    Position.Y = 502.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 746.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object RectangleHeader: TRectangle
+    Align = Top
+    Size.Width = 746.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
+    Stroke.Thickness = 0.100000001490116100
+    object ButtonMultiView: TButton
+      Align = Right
+      Position.X = 696.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbuttonmultiview'
+      TabOrder = 0
+    end
+  end
+  object MultiView1: TMultiView
+    MasterButton = ButtonMultiView
+    Mode = Popover
+    NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
     TabOrder = 0
     object GroupBox1: TGroupBox
       Align = Top
       Size.Width = 250.000000000000000000
-      Size.Height = 449.000000000000000000
+      Size.Height = 393.000000000000000000
       Size.PlatformDefault = False
       Text = 'Navigation bar'
       TabOrder = 0
