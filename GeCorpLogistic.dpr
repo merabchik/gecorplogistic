@@ -3,14 +3,16 @@ program GeCorpLogistic;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  mainUnit in 'mainUnit.pas' {Form1},
-  DMUnit in 'DMUnit.pas' {DModule: TDataModule};
+  mainUnit in 'mainUnit.pas' {mainForm},
+  DMUnit in 'DMUnit.pas' {DModule: TDataModule},
+  Forms.ActiveWorks in 'forms\Forms.ActiveWorks.pas' {ActiveWorksForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TmainForm, mainForm);
   Application.CreateForm(TDModule, DModule);
+  Application.CreateForm(TActiveWorksForm, ActiveWorksForm);
   Application.Run;
 end.

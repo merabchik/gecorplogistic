@@ -10,7 +10,7 @@ uses
   FMX.ActnList;
 
 type
-  TForm1 = class(TForm)
+  TmainForm = class(TForm)
     MultiView1: TMultiView;
     GroupBox1: TGroupBox;
     Button1: TButton;
@@ -33,25 +33,31 @@ type
   end;
 
 var
-  Form1: TForm1;
+  mainForm: TmainForm;
 
 implementation
 
 {$R *.fmx}
 
-procedure TForm1.ActionLoaderClientsExecute(Sender: TObject);
+uses Forms.ActiveWorks, DMUnit;
+
+procedure TmainForm.ActionLoaderClientsExecute(Sender: TObject);
 begin
   // Loader Clients
 end;
 
-procedure TForm1.ActionTrackProvidersExecute(Sender: TObject);
+procedure TmainForm.ActionTrackProvidersExecute(Sender: TObject);
 begin
   // Track Providers
 end;
 
-procedure TForm1.activeWorksActionExecute(Sender: TObject);
+procedure TmainForm.activeWorksActionExecute(Sender: TObject);
 begin
-  // Aactive Works
+  // Active Works
+  with TActiveWorksForm.Create(Application) do
+  begin
+    Activate;
+  end;
 end;
 
 end.

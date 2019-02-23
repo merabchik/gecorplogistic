@@ -1,9 +1,10 @@
-object Form1: TForm1
+object mainForm: TmainForm
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'GeCorp '#169' Logistic '
   ClientHeight = 755
   ClientWidth = 1062
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -117,7 +118,7 @@ object Form1: TForm1
     Left = 400
     Top = 56
     object activeWorksAction: TAction
-      Text = 'Aactive Works'
+      Text = 'Active Works'
       OnExecute = activeWorksActionExecute
     end
     object ActionTrackProviders: TAction

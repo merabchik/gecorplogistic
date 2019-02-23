@@ -121,13 +121,17 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="mainUnit.pas">
-            <Form>Form1</Form>
+            <Form>mainForm</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="DMUnit.pas">
             <Form>DModule</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="forms\Forms.ActiveWorks.pas">
+            <Form>ActiveWorksForm</Form>
+            <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
